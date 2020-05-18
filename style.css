@@ -1,0 +1,92 @@
+h2,h3{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 3rem;
+}
+p{
+    font-family: 'Kosugi', sans-serif; 
+}
+
+.main{
+    width:100%;
+    position: relative;
+}
+html{
+    background-color: #F5F5F6;
+}
+.main p{
+    position: absolute;
+    color: aliceblue;
+    font-weight: 100;
+    font-size: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+}
+@media screen and (max-width: 800px){
+    h2,h3{
+        font-size: 1rem;
+    }
+    .main p{
+        position: absolute;
+        color: aliceblue;
+        font-weight: 100;
+        font-size: 1rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin:0;
+        padding:0;
+    }
+}
+
+.main div{
+    position: absolute;
+    color: aliceblue;
+    font-weight: 100;
+    font-size: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:3%;
+}
+
+
+img{
+    width:100%;
+}
+.card{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.fadeInUp {
+    opacity : 0;
+    transform: translateY(20px);
+    transition: 1s;
+  }
+
+.titlecs{
+    font-size: 2rem;
+}
+
+
+
+#loader-bg {
+    background: #111111;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+#loader-bg > .box{	
+    text-align: center;
+    position: fixed;
+    top: 40%;
+    left: 30%;
+    right: 30%;
+}
