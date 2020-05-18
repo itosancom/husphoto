@@ -1,0 +1,38 @@
+.bg-act_top {
+	background-image: url("../img/act/act_top.jpg");
+}
+
+.bg-top2 {
+	background-image: url("../img/index/top2.jpg");
+}
+
+.bg-OC {
+	background-image: url("../img/act/OC.png");
+}
+
+.bg-GA {
+	background-image: url("../img/act/GA.png");
+}
+
+.bg-Sandai {
+	background-image: url("../img/act/Sandai.png");
+}
+
+.bg-Illumi {
+	background-image: url("../img/act/Illumi.png");
+}
+
+.bg-EX {
+	background-image: url("../img/act/EX.png");
+}
+
+/* ボタンサイズ分のマージンを追加 */
+.btn-mg {
+	margin-bottom: 1.375rem
+}
+
+.btn {
+	position: absolute;
+	bottom: 0;
+	margin: 1rem 0;
+}
