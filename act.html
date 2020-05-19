@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/act.css">
     
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -20,26 +21,25 @@
 
   <div id="loader-bg">
     <div class="box">
-      <h3 style="text-align: center; color: aliceblue;">北海道科学大学</h3>
-      <h3 style="margin-bottom:1rem; text-align: center; color: aliceblue;">写真部</h3>
+      <p style="text-align: center; color: aliceblue; font-size: 3rem;"><span>北海道科学大学</span><span style="margin-bottom:1rem; display: block;">写真部</span></p>
       <div class="spinner-border text-white" role="status">
         <span class="sr-only">Loading...</span>
       </div>
     </div>
   </div>
   
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="index.html">北海道科学大学 写真部</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="act.html">Activities</a>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="act.html">Activities <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
@@ -50,133 +50,129 @@
           </span>
         </div>
     </nav>
-    <div class="fadeInUp main">
-        <img src="./img/act/act_top.jpg" alt="top">
-        <div>
-        <h2 class="titlecs">#活動内容</h2>
-      </div>
-    </div>
-
-    <div class="container" id = "content">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card" style="width: 95%;">
-                        <img src="./img/act/Shinkan.png"  width="100%" height="100%" alt="top">
-                    <div class="card-body">
-                      <h5 class="card-title">新入部員歓迎会</h5>
-                      <a href="#shinkan" class="btn btn-outline-info">詳細</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 95%;">
-                    <img src="./img/act/OC.png"  width="100%" height="100%" alt="top">
-                    <div class="card-body">
-                      <h5 class="card-title">オープンキャンパス撮影協力</h5>
-                      <a href="#OC" class="btn btn-outline-info">詳細</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 95%;">
-                    <img src="./img/act/GA.png"  width="100%" height="100%" alt="top">
-                    <div class="card-body">
-                      <h5 class="card-title">合宿</h5>
-                      <a href="#GA" class="btn btn-outline-info">詳細</a>
-                    </div>
-                  </div>
-            </div>
-          </div>
-          
-    </div>
-
-    <div class="container" id = "content">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card" style="width: 95%;">
-                        <img src="./img/act/Sandai.png"  width="100%" height="100%" alt="top">
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">三大学写真展</h5>
-                      <a href="#Sandai" class="btn btn-outline-info">詳細</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 95%;">
-                    <img src="./img/act/Illumi.png"  width="100%" height="100%" alt="top">
-                    <div class="card-body">
-                      <h5 class="card-title">キャンパスイルミネーション</h5>
-                      <a href="#Illumi" class="btn btn-outline-info">詳細</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 95%;">
-                    <img src="./img/act/EX.png"  width="100%" height="100%" alt="top">
-                    <div class="card-body">
-                      <h5 class="card-title">EX展</h5>
-                      <a href="#EX" class="btn btn-outline-info">詳細</a>
-                    </div>
-                  </div>
-            </div>
-          </div>
-          
-    </div>
-
-    <div style="margin-top:5em"  class="fadeInUp main" id="shinkan">
-        <img src="./img/index/top2.jpg" alt="top">
-        <div>
-        <h2 id="cont2">#新入部員歓迎会</h2>
-        新入部員を歓迎する会です。
-        毎年、円山公園に撮影に行きます。
-        </div>
-    </div>
-
-    <div class="fadeInUp main" id="OC">
-        <img src="./img/act/OC.png" alt="top">
-        <div>
-        <h2 id="cont2">#オープンキャンパス撮影協力</h2>
-        入試課と協力し、オープンキャンパスのパンフレット用の<br>
-        写真の撮影協力を行っています。
-        </div>
-    </div>
-
-    <div class="fadeInUp main" id="GA">
-        <img src="./img/act/GA.png" alt="top">
-        <div>
-        <h2  id="cont2">#合宿</h2>
-        夏休み期間中に3泊4日で北海道のどこかに<br>
-        合宿に行きます。昨年は旭川に行きました。
-        </div>
-    </div>
-
-    <div class="fadeInUp main" id="Sandai">
-        <img src="./img/act/Sandai.png" alt="top">
-        <div>
-        <h2 id="cont2">#三大学写真展</h2>
-        北海学園大学II部写真部さんと、北海道文教大学写真部さんと<br>
-        合同で写真展を行います。
-        </div>
-    </div>
-
-    <div class="fadeInUp main" id="Illumi">
-        <img src="./img/act/Illumi.png" alt="top">
-        <div>
-        <h2 id="cont2">#キャンパスイルミネーション撮影</h2>
-        12月に学内で開催されるキャンパスイルミネーションの撮影を行います。<br>
-        ホットココアがおいしいです。
-        </div>
-    </div>
-
-    <div class="fadeInUp main" id="EX">
-        <img src="./img/act/EX.png" alt="top">
-        <div>
-        <h2 id="cont2">#EX展</h2>
-        札幌圏の大学写真部合同で展示を行います。<br>
-        とても規模が大きいです。
-        </div>
-    </div>
+	
+	<div class="jumbotron jumbotron-fluid title-img bg-act_top fadeInUp main">
+  		<div class="container">
+    		<h1 class="text-center">#活動内容</h1>
+  		</div><!-- /.container -->
+	</div><!-- /.jumbotron -->
+		
+	<div class="container">
+		<div class="card-deck">
+			<div class="row">
+				<div class="col-sm-4 pb-5">
+					<div class="card h-100">
+					<img class="bd-placeholder-img card-img-top"  src="./img/act/Shinkan.png" alt="Shinkan">
+					<div class="card-body btn-mg">
+					<h5 class="card-title">新入部員歓迎会</h5>
+                      <a href="#shinkan" class="btn btn-outline-info mb-3">詳細</a>
+                	</div>
+				</div>
+				</div>
+				<div class="col-sm-4 pb-5">
+					<div class="card h-100">
+				<img class="bd-placeholder-img card-img-top"  src="./img/act/OC.png" alt="OC">
+				<div class="card-body btn-mg">
+					<h5 class="card-title">オープンキャンパス撮影協力</h5>
+                     <a href="#OC" class="btn btn-outline-info mb-3">詳細</a>
+                </div>
+			</div>
+				</div>
+				<div class="col-sm-4 pb-5">
+				<div class="card h-100">
+				<img class="bd-placeholder-img card-img-top"  src="./img/act/GA.png" alt="GA">
+				<div class="card-body btn-mg">
+					<h5 class="card-title">合宿</h5>
+                     <a href="#GA" class="btn btn-outline-info mb-3">詳細</a>
+                </div>
+				</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 pb-5">
+				<div class="card h-100">
+				<img class="bd-placeholder-img card-img-top"  src="./img/act/Sandai.png" alt="Sandai">
+				<div class="card-body btn-mg">
+					<h5 class="card-title">三大学写真展</h5>
+                     <a href="#Sandai" class="btn btn-outline-info mb-3">詳細</a>
+                </div>
+				</div>
+				</div>
+			
+				<div class="col-sm-4 pb-5">
+				<div class="card h-100">
+				<img class="bd-placeholder-img card-img-top"  src="./img/act/Illumi.png" alt="Illumi">
+				<div class="card-body btn-mg">
+					<h5 class="card-title">キャンパスイルミネーション</h5>
+                    <a href="#Illumi" class="btn btn-outline-info mb-3">詳細</a>
+                </div>
+				</div>
+				</div>
+			
+				<div class="col-sm-4 pb-5">
+				<div class="card h-100">
+				<img class="bd-placeholder-img card-img-top"  src="./img/act/EX.png" alt="EX">
+				<div class="card-body btn-mg">
+					<h5 class="card-title">EX展</h5>
+                    <a href="#EX" class="btn btn-outline-info mb-3">詳細</a>
+                </div>
+				</div>
+				</div>					
+			</div>
+		</div><!-- /.card-deck -->
+	</div><!-- /.container -->
+	
+	<div class="bg-main mt-5">
+		
+	<div class="jumbotron jumbotron-fluid bg-img bg-top2 fadeInUp main" id="shinkan">
+  		<div class="container">
+    		<h2 id="cont1">#新入部員歓迎会</h2>
+		  	新入部員を歓迎する会です。
+        	毎年、円山公園に撮影に行きます。
+	  </div><!-- /.container -->
+	</div><!-- /.jumbotron -->
+		
+	<div class="jumbotron jumbotron-fluid bg-img bg-OC fadeInUp main" id="OC">
+  		<div class="container">
+    		<h2 id="cont2">#オープンキャンパス撮影協力</h2>
+		  	入試課と協力し、オープンキャンパスのパンフレット用の<br>
+        	写真の撮影協力を行っています。
+	  </div><!-- /.container -->
+	</div><!-- /.jumbotron -->
+		
+	<div class="jumbotron jumbotron-fluid bg-img bg-GA fadeInUp main" id="GA">
+  		<div class="container">
+    		<h2 id="cont3">#合宿</h2>
+		  	夏休み期間中に3泊4日で北海道のどこかに<br>
+        	合宿に行きます。昨年は旭川に行きました。
+	  </div><!-- /.container -->
+	</div><!-- /.jumbotron -->
+		
+	<div class="jumbotron jumbotron-fluid bg-img bg-Sandai fadeInUp main" id="Sandai">
+  		<div class="container">
+    		<h2 id="cont4">#三大学写真展</h2>
+		  	北海学園大学II部写真部さんと、北海道文教大学写真部さんと<br>
+        	合同で写真展を行います。
+	  </div><!-- /.container -->
+	</div><!-- /.jumbotron -->
+		
+	<div class="jumbotron jumbotron-fluid bg-img bg-Illumi fadeInUp main" id="Illumi">
+  		<div class="container">
+    		<h2 id="cont5">#キャンパスイルミネーション撮影</h2>
+		  	12月に学内で開催されるキャンパスイルミネーションの撮影を行います。<br>
+        	ホットココアがおいしいです。
+	  </div><!-- /.container -->
+	</div><!-- /.jumbotron -->
+	
+	<div class="jumbotron jumbotron-fluid bg-img bg-EX fadeInUp main" id="EX">
+  		<div class="container">
+    		<h2 id="cont6">#EX展</h2>
+		  	札幌圏の大学写真部合同で展示を行います。<br>
+        	とても規模が大きいです。
+	  </div><!-- /.container -->
+	</div><!-- /.jumbotron -->
+		
+	</div><!-- /.bg-main -->
 </body>
 </html>
 

@@ -1,9 +1,26 @@
-h2,h3{
+h1,h2,h3{
     font-family: 'Sawarabi Mincho', sans-serif;
     font-size: 3rem;
 }
+
+h5{
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
 p{
     font-family: 'Kosugi', sans-serif; 
+}
+
+.loder-text {
+	font-family: 'Sawarabi Mincho', sans-serif;
+	text-align: center;
+	color: aliceblue;
+	font-size: 3rem;
+}
+
+.loder-text-photo {
+	display: block;
+	margin-bottom:1rem;
 }
 
 .main{
@@ -25,8 +42,8 @@ html{
     padding:0;
 }
 @media screen and (max-width: 800px){
-    h2,h3{
-        font-size: 1rem;
+    h1,h2,h3{
+        font-size: 1.5rem;
     }
     .main p{
         position: absolute;
@@ -39,6 +56,15 @@ html{
         margin:0;
         padding:0;
     }
+	
+	.loder-text {
+		font-size: 1.3rem;
+	}
+
+	.loder-text-photo {
+		display: block;
+		margin-bottom:.5rem;
+	}
 }
 
 .main div{
@@ -89,4 +115,25 @@ img{
     top: 40%;
     left: 30%;
     right: 30%;
+}
+
+.bg-main {
+	background-color: #222;
+}
+
+.bg-img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+ 	height: auto;
+ 	min-height: 100vh;
+	margin-bottom: 0;
+}
+
+.title-img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    height: 30vh;
 }

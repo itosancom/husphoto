@@ -1,0 +1,15 @@
+.bg-contact_top {
+	background-image: url("../img/contact/contact.jpg");
+}
+
+
+/* ボタンサイズ分のマージンを追加 */
+.btn-mg {
+	margin-bottom: 1.375rem
+}
+
+.btn {
+	position: absolute;
+	bottom: 0;
+	margin: 1rem 0;
+}
